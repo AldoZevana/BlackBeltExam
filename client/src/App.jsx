@@ -10,7 +10,9 @@ function App() {
             <Routes>
                 <Route exact path="/pirate/new" element={<PirateForm />} />
                 <Route default path="/pirates" element={<DisplayPirates />} />
+                <Route path="/" element={<DisplayPirates />} />
                 <Route path="/pirate/:id" element={<Pirate />} />
+
             </Routes>
         </BrowserRouter>
     );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams,Link } from 'react-router-dom';
 import styles from'./PirateStyle.module.css'
 
 function Pirate() {
@@ -59,6 +59,7 @@ function Pirate() {
                     <label>Hook Hand:</label>
                     <input type="checkbox" checked={hookHand} onChange={(e) => updateField('hookHand', e.target.checked)} />
                 </div>
+                <Link to="/pirates">Crew Board</Link>
               </div>
             </div>
         </div>
